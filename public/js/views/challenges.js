@@ -52,11 +52,12 @@ export async function renderChallenges(view, { stale }) {
       ),
       surpriseBtn,
     ),
-    data.surprises.length > 0 &&
-      h('section', {},
-        h('h2', { class: 'section-title' }, 'Your open surprises'),
-        h('div', { class: 'challenge-grid' }, data.surprises.map(challengeCard)),
-      ),
+    ...(data.surprises.length > 0
+      ? [h('section', {},
+          h('h2', { class: 'section-title' }, 'Your open surprises'),
+          h('div', { class: 'challenge-grid' }, data.surprises.map(challengeCard)),
+        )]
+      : []),
     h('section', {},
       data.surprises.length > 0 && h('h2', { class: 'section-title' }, 'The gauntlet'),
       h('div', { class: 'challenge-grid' }, data.challenges.map(challengeCard)),

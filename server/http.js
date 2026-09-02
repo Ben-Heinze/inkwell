@@ -56,6 +56,9 @@ export async function readJsonBody(req, limit = 1_000_000) {
 }
 
 export function sendJson(res, status, obj) {
-  res.writeHead(status, { 'content-type': 'application/json; charset=utf-8' });
+  res.writeHead(status, {
+    'content-type': 'application/json; charset=utf-8',
+    'x-content-type-options': 'nosniff',
+  });
   res.end(JSON.stringify(obj));
 }

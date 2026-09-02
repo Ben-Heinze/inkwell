@@ -28,6 +28,36 @@ purely local, no email), and write.
 - Your journal lives **outside the repo** at `~/.local/share/inkwell/inkwell.db`
   (override with `INKWELL_DB=/path/to.db`). Entries are private to your machine.
 
+## Screenshots
+
+**Today** — your streak, the shared daily prompt, fading wordbank words, and latest badges at a glance:
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+**Write** — the editor enforcing a challenge's live checklist (word-count progress and required words tick off as you type):
+
+![Editor with challenge checklist](docs/screenshots/editor.png)
+
+**Journal** — searchable, filterable history of everything you've written:
+
+![Journal](docs/screenshots/journal.png)
+
+**Challenges** — 12 authored constraints plus "Surprise me", which builds a personal challenge from your most-faded words:
+
+![Challenges](docs/screenshots/challenges.png)
+
+**Wordbank** — your personal dictionary, with mastery bars that fade when words go unused:
+
+![Wordbank](docs/screenshots/wordbank.png)
+
+**Learn a word** — present → quiz → placement; answers set a starting mastery of 50–65%, never 100:
+
+![Learn a new word](docs/screenshots/learn.png)
+
+**Progress** — level ring, 30-day XP sparkline, writing heatmap, and the badge gallery:
+
+![Progress](docs/screenshots/progress.png)
+
 ## What's inside
 
 | Pillar | How it works |
@@ -58,7 +88,7 @@ Deliberately minimal: **zero dependencies, no build step**.
 server/
   index.js        http server + static files + API dispatch
   db.js           schema, migrations, seed loading
-  auth.js         scrypt password hashing, cookie sessions
+  auth.js         salted scrypt password hashing (versioned, rehash-on-login), hashed session tokens
   service.js      XP ledger, stats snapshot, achievements, daily-prompt pick
   routes/         auth, entries, words (+ quizzes), challenges, dashboard, stats
   domain/         pure game rules: xp, mastery, streak, quiz, achievements

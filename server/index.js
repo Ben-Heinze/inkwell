@@ -58,6 +58,8 @@ function serveStatic(res, pathname) {
   res.writeHead(200, {
     'content-type': MIME[extname(file).toLowerCase()] || 'application/octet-stream',
     'cache-control': file.endsWith('index.html') ? 'no-store' : 'max-age=60',
+    'x-content-type-options': 'nosniff',
+    'referrer-policy': 'same-origin',
   });
   res.end(data);
 }
