@@ -1,0 +1,82 @@
+[
+  {
+    "key": "hundred-true",
+    "title": "One Hundred True Words",
+    "description": "Write exactly what's true for you right now. No performance, no polish — just one hundred honest words.",
+    "minWords": 100
+  },
+  {
+    "key": "long-haul",
+    "title": "The Long Haul",
+    "description": "Go long. One sitting, one thread of thought, five hundred words before you stand up.",
+    "minWords": 500
+  },
+  {
+    "key": "storm-warning",
+    "title": "Storm Warning",
+    "description": "Write a scene where the weather changes everything.",
+    "minWords": 75,
+    "requiredWords": ["thunder", "umbrella", "flicker"]
+  },
+  {
+    "key": "color-study",
+    "title": "Color Study",
+    "description": "Describe something ordinary until its colors make it extraordinary.",
+    "minWords": 60,
+    "requiredWords": ["crimson", "pale", "glow"]
+  },
+  {
+    "key": "overheard",
+    "title": "Overheard",
+    "description": "Build a story around a scrap of conversation you were never meant to hear.",
+    "minWords": 100,
+    "requiredWords": ["whisper", "laughter"]
+  },
+  {
+    "key": "unsent-letter",
+    "title": "The Unsent Letter",
+    "description": "Write the letter you would never actually send.",
+    "minWords": 120,
+    "requiredWords": ["dear"]
+  },
+  {
+    "key": "object-memoir",
+    "title": "Object Memoir",
+    "description": "Tell a piece of your story through a single object that has traveled with you.",
+    "minWords": 150,
+    "requiredWords": ["pocket", "worn", "kept"]
+  },
+  {
+    "key": "turning-point",
+    "title": "Turning Point",
+    "description": "Write about a before-and-after moment — yours or an invented one.",
+    "minWords": 200
+  },
+  {
+    "key": "three-gratitudes",
+    "title": "Three Gratitudes",
+    "description": "What are you grateful for? No lists — get specific enough that a stranger could picture each one.",
+    "minWords": 60,
+    "requiredWords": ["grateful"]
+  },
+  {
+    "key": "postcard-nowhere",
+    "title": "Postcard From Nowhere",
+    "description": "Look at the picture. Write the postcard this place would send.",
+    "minWords": 75,
+    "image": "🖼️🌊🚤"
+  },
+  {
+    "key": "midnight-kitchen",
+    "title": "Midnight Kitchen",
+    "description": "Someone is cooking at midnight. Tell us why.",
+    "minWords": 100,
+    "image": "🌙🍳☕"
+  },
+  {
+    "key": "tiny-epic",
+    "title": "Tiny Epic",
+    "description": "An epic in miniature: a quest, an obstacle, a return — all in one small space.",
+    "minWords": 300
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "inkwell",
+  "version": "1.0.0",
+  "description": "A gamified journaling and vocabulary app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
